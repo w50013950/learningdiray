@@ -1,0 +1,38 @@
+7.16
+1.学习git基本使用方法：
+mkdir xxx
+cd xxx
+git init
+git add xxx
+git commit -m "xxx"
+git status
+git diff xxx
+git diff HEAD -- xxx
+git reset --hard HEAD^//^^//~100
+git log//提交历史
+git reflog//命令历史
+git checkout -- xxx//工作区修改撤销
+git reset HEAD readme.txt//暂存区修改撤销
+git rm xxx
+git commit -m 'xxxx'//从版本库中删除
+git checkout -- test.txt//恢复到最新版本
+git remote add origin xxxxxxxxx
+git clone xxxxxxxx//克隆一个本地库
+git branch//查看分支
+git branch xxx//创建分支
+git checkout xxx//切换分支
+git checkout -b xxx///创建+切换分支
+git merge xxx//合并某分支到当前分支
+git branch -d xxx//删除分支
+解决冲突：
+git log --graph//分支合并图
+
+
+
+
+2.未完成任务
+没有完成小组代码仓库的下载，权限依旧有问题
+3.今天遇到的坑
+第一个是自己最开始没有搞明白命令行的用处，以为在bush中就可以修改txt文件，结果发现怎么着都不行。最后才发现git commit分号里的东西算是log，不是要写到txt文档里的东西。
+第二个是不知道自己的代码仓库地址，这个问题直接在hi就能查到，是没有进行配置代理。先修改user->w50013950->.gitconfig，之后再git config --global http.proxy http://[域账号]:[域密码]@proxycn2.huawei.com:8080就可以了
+4.今天打算把以后的日报都放到GitHub上，以前没有用过，今天也算是开了个头。
